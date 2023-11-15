@@ -26,7 +26,7 @@ export const HomePage=()=>{
             <div>
                 <input type="text" onChange={debounceUpdateSearch} id="userInput" placeholder="Enter photo Id" />
             </div>
-            <div className="imageContainer">
+            <div id="imageContainer">
                 {
                     photoData?.map((e)=>{
                         return <PhotoCard id={e.login} url={e.avatar_url} />
